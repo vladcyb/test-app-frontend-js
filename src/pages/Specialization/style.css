@@ -1,0 +1,55 @@
+.specialization__tableHeader {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+}
+
+.specialization__tableHeader div {
+    font-weight: bold;
+}
+
+.specialization__headerId {
+    grid-column-start: 2;
+}
+
+.specialization__row {
+    height: 50px;
+    display: grid;
+    align-content: center;
+    border-bottom: 1px solid #777777;
+    grid-template-columns: 60px 1fr 1fr;
+}
+
+.specialization__addRow {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    margin-top: 20px;
+}
+
+.specialization__actions {
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: unset;
+}
+
+.specialization__remove {
+    background: url("../../shared/img/remove.svg") transparent center / contain no-repeat;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.specialization__edit {
+    background: url("../../shared/img/edit.svg") transparent center / contain no-repeat;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.specialization__add,
+.specialization__save,
+.specialization__cancel {
+    margin-left: 5px;
+}
+

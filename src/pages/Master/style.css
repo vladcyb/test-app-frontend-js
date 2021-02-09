@@ -1,0 +1,90 @@
+.master__tableHeader {
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: 60px repeat(6, 1fr);
+}
+
+.master__tableHeader div {
+    font-weight: bold;
+}
+
+.master__row {
+    align-content: center;
+    height: 50px;
+    border-bottom: 1px solid #777777;
+}
+
+.master__row,
+.master__addRow {
+    display: grid;
+    grid-template-columns: 60px repeat(6, 1fr);
+}
+
+.master__addRow {
+    margin-top: 20px;
+    row-gap: 5px;
+}
+
+.master__row_editing {
+    height: 60px;
+}
+
+.master__actions {
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: unset;
+}
+
+.master__remove {
+    background-image: url("../../shared/img/remove.svg");
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.master__edit {
+    background-image: url("../../shared/img/edit.svg");
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.master__cancelEdit {
+    grid-column: 6 / span 1;
+    height: 30px;
+}
+
+.master__save {
+    grid-column: 7 / span 1;
+    height: 30px;
+}
+
+.master__headerId {
+    grid-column-start: 2;
+}
+
+.master__addRowLogin {
+    grid-column-start: 3;
+}
+
+.master__addBtn {
+    grid-column-start: 7;
+}
+
+.master__filter select,
+.master__filter button {
+    height: 30px;
+}
+
+.master__filter button {
+    margin-left: 5px;
+}
